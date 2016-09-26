@@ -1,5 +1,5 @@
 # Exporter-Service-Now
-Exporter Service-Now
+Exporter Service-Now for pulling data in various formats from service now automatically
 
 For Downloading Reports 
 https://<instance-name>.service-now.com/sys_report_template.do?<format>&<query like this>jvar_report_id=3a0d2ce20fcaae802eadeee69205
