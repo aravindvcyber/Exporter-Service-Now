@@ -18,7 +18,14 @@ namespace Exporter_Service_Now
             string ToDownload = "";
             Console.WriteLine("Please enter the download file url : ");
             ToDownload = Console.ReadLine();
-            int read = DownloadFile(ToDownload, @"d:\ps\test\Report.xls");
+            Console.WriteLine("Please enter the local export full file path : ");
+            string ToExport = "";
+            ToExport = Console.ReadLine();
+            if (ToExport == "")
+            {
+                ToExport = "Export.xls";
+            }
+            int read = DownloadFile(ToDownload, ToExport);
             Console.WriteLine("Exporter ended successfully ");
         }
         public static int DownloadFile(String url,
